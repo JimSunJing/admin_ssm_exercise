@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @Controller
@@ -23,8 +24,20 @@ public class ProductController {
 
         mv.addObject("productList",all);
         mv.setViewName("productList");
-
         return mv;
     }
+
+    @RequestMapping("/addProduct")
+    public String addProduct(Product product){
+        System.out.println(product);
+        service.addProduct(product);
+        return "redirect:findAll";
+    }
+
+    /*@RequestMapping("/addProduct")
+    public String addProduct(HttpServletRequest request){
+        System.out.println(request.getParameter("departureTime"));
+        return "redirect:findAll";
+    }*/
 
 }

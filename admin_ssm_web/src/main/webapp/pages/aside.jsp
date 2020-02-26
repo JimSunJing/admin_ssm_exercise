@@ -91,7 +91,7 @@
                 <ul class="treeview-menu">
 
                     <li id="charts-chartjs">
-                        <a href="all-charts-chartjs.html">
+                        <a href="productList.jsp">
                             <i class="fa fa-circle-o"></i> 产品管理
                         </a>
                     </li>

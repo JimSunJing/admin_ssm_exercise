@@ -11,4 +11,10 @@ public interface ProductService {
      * @return
      */
     public List<Product> findAll() throws Exception;
+
+    /**
+     * 添加商品信息
+     * @param product
+     */
+    void addProduct(Product product);
 }

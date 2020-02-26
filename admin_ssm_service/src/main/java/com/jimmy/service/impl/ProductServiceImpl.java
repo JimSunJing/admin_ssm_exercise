@@ -19,4 +19,10 @@ public class ProductServiceImpl implements ProductService {
     public List<Product> findAll() throws Exception {
         return productDao.findAll();
     }
+
+    public void addProduct(Product product) {
+        productDao.addProduct(product);
+    }
+
+
 }

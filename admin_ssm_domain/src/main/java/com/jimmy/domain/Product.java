@@ -1,8 +1,8 @@
 package com.jimmy.domain;
 
 import com.jimmy.utils.DateUtils;
+import org.springframework.format.annotation.DateTimeFormat;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -14,6 +14,7 @@ public class Product {
     private String productNum;
     private String productName;
     private String cityName;
+    @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm")
     private Date departureTime;
     private String departureTimeStr;
     private double productPrice;

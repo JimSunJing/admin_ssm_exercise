@@ -29,6 +29,16 @@
     <mvc:resources mapping="/plugins/**" location="/plugins/"/>
 
     <mvc:annotation-driven/>
+    <!--<mvc:annotation-driven conversion-service="formattingConversionService"/>
+    &lt;!&ndash;配置时间转换器&ndash;&gt;
+    <bean class="org.springframework.format.support.FormattingConversionServiceFactoryBean"
+          id="formattingConversionService">
+        <property name="converters">
+            <list>
+                <bean class="com.jimmy.utils.DateConverter"></bean>
+            </list>
+        </property>
+    </bean>-->
 
     <!--AOP的注解支持，AOP底层使用代理技术
     有一个proxy-target-class属性，默认为false，表示使用jdk动态代理织入增强，

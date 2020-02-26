@@ -186,7 +186,7 @@
                                     <div class="form-group form-inline">
                                         <div class="btn-group">
                                             <button type="button" class="btn btn-default" title="新建"
-                                                    onclick="location.href='${pageContext.request.contextPath}/pages/product-add.jsp'">
+                                                    onclick="location.href='${pageContext.request.contextPath}/pages/addProduct.jsp'">
                                                 <i class="fa fa-file-o"></i> 新建
                                             </button>
                                             <button type="button" class="btn btn-default" title="删除">
@@ -357,6 +357,9 @@
     <jsp:include page="tail.jsp"/>
     <%--底部导航--%>
 
+    <%--底部的js--%>
+    <jsp:include page="final_script.jsp"/>
+    <%--底部的js--%>
 </div>
 </body>
 </html>
