@@ -4,7 +4,7 @@
     <title>Title</title>
 </head>
 <body>
-<h3>${product_list}</h3>
+<h3>${productList}</h3>
 
 </body>
 </html>
