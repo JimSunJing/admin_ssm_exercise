@@ -362,3 +362,45 @@
 2020-02-27 13:12:20,465 1482   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 568 ms
 2020-02-27 13:12:54,012 35029  [bio-8080-exec-3] ERROR aba.druid.pool.DruidDataSource  - testWhileIdle is true, validationQuery not set
 2020-02-27 13:12:54,029 35046  [bio-8080-exec-3] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2020-02-27 13:47:00,304 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2020-02-27 13:47:00,390 86     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Thu Feb 27 13:47:00 GMT+08:00 2020]; root of context hierarchy
+2020-02-27 13:47:00,432 128    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext.xml]
+2020-02-27 13:47:01,044 740    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-02-27 13:47:01,645 1341   [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 1325 ms
+2020-02-27 13:47:01,690 1386   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2020-02-27 13:47:01,692 1388   [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Thu Feb 27 13:47:01 GMT+08:00 2020]; parent: Root WebApplicationContext
+2020-02-27 13:47:01,693 1389   [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [springmvc.xml]
+2020-02-27 13:47:01,891 1587   [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-02-27 13:47:02,272 1968   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2020-02-27 13:47:02,297 1993   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2020-02-27 13:47:02,304 2000   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2020-02-27 13:47:02,313 2009   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/plugins/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2020-02-27 13:47:02,354 2050   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/order/findAll]}" onto public org.springframework.web.servlet.ModelAndView com.jimmy.controller.OrderController.findAll(int,int) throws java.lang.Exception
+2020-02-27 13:47:02,355 2051   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/addProduct]}" onto public java.lang.String com.jimmy.controller.ProductController.addProduct(com.jimmy.domain.Product)
+2020-02-27 13:47:02,356 2052   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/findAll]}" onto public org.springframework.web.servlet.ModelAndView com.jimmy.controller.ProductController.findAll() throws java.lang.Exception
+2020-02-27 13:47:02,473 2169   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Thu Feb 27 13:47:01 GMT+08:00 2020]; parent: Root WebApplicationContext
+2020-02-27 13:47:02,523 2219   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Thu Feb 27 13:47:01 GMT+08:00 2020]; parent: Root WebApplicationContext
+2020-02-27 13:47:02,612 2308   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 922 ms
+2020-02-27 13:47:08,370 8066   [bio-8080-exec-1] ERROR aba.druid.pool.DruidDataSource  - testWhileIdle is true, validationQuery not set
+2020-02-27 13:47:08,555 8251   [bio-8080-exec-1] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2020-02-27 13:56:29,168 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2020-02-27 13:56:29,246 78     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Thu Feb 27 13:56:29 GMT+08:00 2020]; root of context hierarchy
+2020-02-27 13:56:29,299 131    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext.xml]
+2020-02-27 13:56:29,676 508    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-02-27 13:56:30,216 1048   [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 1045 ms
+2020-02-27 13:56:30,243 1075   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2020-02-27 13:56:30,245 1077   [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Thu Feb 27 13:56:30 GMT+08:00 2020]; parent: Root WebApplicationContext
+2020-02-27 13:56:30,245 1077   [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [springmvc.xml]
+2020-02-27 13:56:30,360 1192   [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-02-27 13:56:30,619 1451   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2020-02-27 13:56:30,638 1470   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2020-02-27 13:56:30,643 1475   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2020-02-27 13:56:30,647 1479   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/plugins/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2020-02-27 13:56:30,682 1514   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/order/findAll]}" onto public org.springframework.web.servlet.ModelAndView com.jimmy.controller.OrderController.findAll(int,int) throws java.lang.Exception
+2020-02-27 13:56:30,683 1515   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/findAll]}" onto public org.springframework.web.servlet.ModelAndView com.jimmy.controller.ProductController.findAll() throws java.lang.Exception
+2020-02-27 13:56:30,683 1515   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/addProduct]}" onto public java.lang.String com.jimmy.controller.ProductController.addProduct(com.jimmy.domain.Product)
+2020-02-27 13:56:30,755 1587   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Thu Feb 27 13:56:30 GMT+08:00 2020]; parent: Root WebApplicationContext
+2020-02-27 13:56:30,801 1633   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Thu Feb 27 13:56:30 GMT+08:00 2020]; parent: Root WebApplicationContext
+2020-02-27 13:56:30,959 1791   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 716 ms
+2020-02-27 13:56:43,128 13960  [bio-8080-exec-2] ERROR aba.druid.pool.DruidDataSource  - testWhileIdle is true, validationQuery not set
+2020-02-27 13:56:43,142 13974  [bio-8080-exec-2] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited

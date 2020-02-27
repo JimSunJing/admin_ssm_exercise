@@ -1,5 +1,6 @@
 package com.jimmy.service.impl;
 
+import com.github.pagehelper.PageHelper;
 import com.jimmy.dao.OrderDao;
 import com.jimmy.domain.Order;
 import com.jimmy.service.OrderService;
@@ -15,6 +16,12 @@ public class OrderServiceImpl implements OrderService {
     private OrderDao orderDao;
 
     public List<Order> findAll() throws Exception {
+        return orderDao.findAll();
+    }
+
+    public List<Order> findAllByPage(int start, int size) throws Exception {
+        // 为pagehelper传递参数
+        PageHelper.startPage(start,size);
         return orderDao.findAll();
     }
 }

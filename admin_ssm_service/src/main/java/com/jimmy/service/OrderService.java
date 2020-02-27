@@ -7,4 +7,6 @@ import java.util.List;
 public interface OrderService{
 
     List<Order> findAll() throws Exception;
+
+    List<Order> findAllByPage(int start,int size) throws Exception;
 }
