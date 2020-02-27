@@ -91,13 +91,13 @@
                 <ul class="treeview-menu">
 
                     <li id="charts-chartjs">
-                        <a href="productList.jsp">
+                        <a href="${pageContext.request.contextPath}/product/findAll">
                             <i class="fa fa-circle-o"></i> 产品管理
                         </a>
                     </li>
 
                     <li id="charts-morris">
-                        <a href="all-charts-morris.html">
+                        <a href="${pageContext.request.contextPath}/order/findAll">
                             <i class="fa fa-circle-o"></i> 订单管理
                         </a>
                     </li>

@@ -136,10 +136,6 @@
           href="${pageContext.request.contextPath}/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.css">
 </head>
 
-
-<head>
-    <title>Home</title>
-</head>
 <body class="hold-transition skin-purple sidebar-mini">
 
 <div class="wrapper">
