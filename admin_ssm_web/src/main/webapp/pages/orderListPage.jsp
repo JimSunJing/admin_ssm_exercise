@@ -245,7 +245,7 @@
                                             <td>${order.payType }</td>
                                             <td class="text-center">${order.orderStatusStr }</td>
                                             <td class="text-center">
-                                                <button type="button" class="btn bg-olive btn-xs">订单</button>
+                                                <button type="button" class="btn bg-olive btn-xs" onclick="orderDetail(${order.id})">订单</button>
                                                 <button type="button" class="btn bg-olive btn-xs">详情</button>
                                                 <button type="button" class="btn bg-olive btn-xs">编辑</button>
                                             </td>
@@ -364,6 +364,10 @@
             var size = $("#changePageSize").val();
 
             location.href = "${pageContext.request.contextPath}/order/findAll?page=1&pageSize="+size;
+        }
+        // 前往订单详情页
+        function orderDetail(oid) {
+            location.href = "${pageContext.request.contextPath}/order/findById?orderId="+oid;
         }
     </script>
 </div>

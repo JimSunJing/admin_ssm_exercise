@@ -47,4 +47,16 @@ public class OrderController {
         mv.setViewName("orderListPage");
         return mv;
     }
+
+    @RequestMapping("/findById")
+    public ModelAndView findById(@RequestParam(name = "orderId", required = true)int oid) throws Exception{
+        ModelAndView mv = new ModelAndView();
+
+        Order order = service.findById(oid);
+
+        mv.addObject("order",order);
+        mv.setViewName("orderShow");
+
+        return mv;
+    }
 }
