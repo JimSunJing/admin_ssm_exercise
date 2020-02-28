@@ -50,6 +50,7 @@
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-taglibs:5.0.1.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-acl:5.0.1.RELEASE" />
           <element id="library" level="project" name="Maven: com.alibaba:druid:1.0.9" />
+          <element id="library" level="project" name="Maven: javax.annotation:jsr250-api:1.0" />
         </element>
       </element>
       <element id="directory" name="META-INF">

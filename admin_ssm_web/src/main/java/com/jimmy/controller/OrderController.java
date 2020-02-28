@@ -4,6 +4,8 @@ import com.github.pagehelper.PageInfo;
 import com.jimmy.domain.Order;
 import com.jimmy.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.annotation.Secured;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -35,6 +37,8 @@ public class OrderController {
      * @throws Exception
      */
     @RequestMapping("/findAll")
+//    @Secured("ROLE_ADMIN") // jsr250可省略role_前缀，但secured不能省略
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     public ModelAndView findAll(
             @RequestParam(name = "page",defaultValue = "1")int page,
             @RequestParam(name = "pageSize",defaultValue = "5")int pageSize) throws Exception {
@@ -49,6 +53,7 @@ public class OrderController {
     }
 
     @RequestMapping("/findById")
+    @PreAuthorize("authentication.principal.username == 'tom'") // 只有tom可以使用
     public ModelAndView findById(@RequestParam(name = "orderId", required = true)int oid) throws Exception{
         ModelAndView mv = new ModelAndView();
 

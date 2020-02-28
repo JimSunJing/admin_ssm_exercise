@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
+<%@taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 <!-- 导航侧栏 -->
 <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
@@ -10,7 +10,7 @@
                 <img src="../img/user2-160x160.jpg" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
-                <p>Jimmy</p>
+                <p><security:authentication property="principal.username"/></p>
                 <a href="#"><i class="fa fa-circle text-success"></i> 在线</a>
             </div>
         </div>
@@ -52,26 +52,27 @@
                         </a>
                     </li>
 
+                    <security:authorize access="hasRole('ADMIN')">
                     <li id="admin-register">
-                        <a href="all-admin-register.html">
+                        <a href="${pageContext.request.contextPath}/user/findAll">
                             <i class="fa fa-circle-o"></i> 用户管理
                         </a>
                     </li>
-
+                    </security:authorize>
                     <li id="admin-404">
-                        <a href="all-admin-404.html">
+                        <a href="${pageContext.request.contextPath}/role/findAll">
                             <i class="fa fa-circle-o"></i> 角色管理
                         </a>
                     </li>
 
                     <li id="admin-500">
-                        <a href="all-admin-500.html">
+                        <a href="${pageContext.request.contextPath}/permission/findAll">
                             <i class="fa fa-circle-o"></i> 资源权限管理
                         </a>
                     </li>
 
                     <li id="admin-blank">
-                        <a href="all-admin-blank.html">
+                        <a href="${pageContext.request.contextPath}/sysLog/findAll">
                             <i class="fa fa-circle-o"></i> 访问日志
                         </a>
                     </li>

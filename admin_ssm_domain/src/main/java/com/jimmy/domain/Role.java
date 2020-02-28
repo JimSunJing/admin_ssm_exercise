@@ -3,17 +3,28 @@ package com.jimmy.domain;
 import java.util.List;
 
 public class Role {
-    private String id;
+    private Integer id;
     private String roleName;
     private String roleDesc;
     private List<Permission> permissions;
     private List<UserInfo> users;
 
-    public String getId() {
+    @Override
+    public String toString() {
+        return "Role{" +
+                "id='" + id + '\'' +
+                ", roleName='" + roleName + '\'' +
+                ", roleDesc='" + roleDesc + '\'' +
+                ", permissions=" + permissions +
+                ", users=" + users +
+                '}';
+    }
+
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
